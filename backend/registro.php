@@ -23,6 +23,7 @@ $stmt->bind_param("sss", $usuario, $passwordHash, $tipo);
 
 if ($stmt->execute()) {
     echo "Usuario creado correctamente";
+     header("Location: ../index.html");
 } else {
     echo "Error: " . $stmt->error;
 }
