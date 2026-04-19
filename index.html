@@ -1,65 +1,26 @@
-<!doctype html>
-<html lang="en" data-bs-theme="light">
-    <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
 
-        <!-- Bootstrap CSS v5.3.8 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    </head>
+<div class="form-container">
+    <form action="backend/login.php" method="POST">
+        <h2>Login</h2>
 
-<body class="d-flex justify-content-center align-items-center vh-100 bg-dark" >
+        <input type="text" name="usuario" placeholder="Usuario" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
 
-<form class="p-4 text-white" style="max-width: 400px; width: 100%;" action="backend/login.php" method="POST">
+        <button type="submit">Entrar</button>
 
-  <div class="mb-4">
-    <input type="text" name="usuario" class="form-control" placeholder="Email address" />
-  </div>
+        <p>¿No tienes cuenta? <a href="registro.html">Regístrate</a></p>
+        <p>¿Olvidaste tu contraseña? <a href="password.html">Recupérala</a></p>
+    </form>
+</div>
 
-  <div class="mb-4">
-    <input type="password" name="password" class="form-control" placeholder="Password" />
-  </div>
-
-  <div class="row mb-4">
-    <div class="col d-flex justify-content-center">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" checked />
-        <label class="form-check-label"> Remember me </label>
-      </div>
-    </div>
-
-    <div class="col">
-      <a href="#">Olvidaste tu contraseña?</a>
-    </div>
-  </div>
-
-  <button type="submit" class="btn btn-primary w-100 mb-4">Iniciar sesión</button>
-
-  <div class="text-center">
-    <p>Registrate en <a href="registro.html">Registro</a></p>
-    <p></p>
-
-    <i class="fab fa-facebook-f mx-2"></i>
-    <i class="fab fa-google mx-2"></i>
-    <i class="fab fa-twitter mx-2"></i>
-    <i class="fab fa-github mx-2"></i>
-  </div>
-
-</form>
-
-
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+</body>
 </html>
